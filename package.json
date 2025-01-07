@@ -1,6 +1,6 @@
 {
   "name": "mcp-server",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Model Context Protocol Server facade to simplify the implementation of agents",
   "type": "module",
   "author": {
