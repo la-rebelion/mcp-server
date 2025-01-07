@@ -13,6 +13,7 @@
       "url": "https://escutia.me/adrian"
     }
   ],
+  "homepage": "https://rebelion.la",
   "repository": {
     "type": "git",
     "url": "https://github.com/la-rebelion/mcp-server"
@@ -21,7 +22,6 @@
     "node": ">=16"
   },
   "license": "MIT",
-  "module": "src/index.ts",
   "bin": {
     "server": "./build/index.js"
   },
