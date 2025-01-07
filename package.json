@@ -1,6 +1,6 @@
 {
-  "name": "mcp-server",
-  "version": "0.1.1",
+  "name": "@la-rebelion/mcp-server",
+  "version": "0.1.2",
   "description": "A Model Context Protocol Server facade to simplify the implementation of agents",
   "type": "module",
   "author": {

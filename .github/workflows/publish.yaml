@@ -36,11 +36,11 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
 
-      - name: Bump version
-        run: |
-          npm version patch -m "chore: bump version to %s [skip ci]"
-          git push
-          git push --tags
+      # - name: Bump version
+      #   run: |
+      #     npm version patch -m "chore: bump version to %s [skip ci]"
+      #     git push
+      #     git push --tags
 
       - name: Publish to npm
         run: npm publish --access public
