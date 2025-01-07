@@ -40,17 +40,28 @@ class MCPServer {
     });
     this.server.setRequestHandler(CallToolRequestSchema, async (request) => {
       const tool = this.getTool(request.params.name);
+      this.server.sendLoggingMessage({
+        level: "info",
+        data: `Executing tool ${tool.toolSchema.name}`,
+      });
+
       return await tool.execute(request.params.arguments);
     });
   }
-  registerTool(name: string, tool: any) {
-    const instance = new tool();
+  registerTool(name: string, tool: Tool) {
+    // const instance = new tool();
     // must be an instance that implements the Tool interface
-    if (!(instance instanceof Tool)) {
+    if (!(tool instanceof Tool)) {
       throw new Error(`Tool ${name} is not an instance of Tool, please extend Tool or review the class definition`);
     }
-    this.tools.set(name, instance);
+    this.tools.set(name, tool);
   }
+
+  /**
+   * Pull a tool from the registered tools
+   * @param name The name of the tool to get from registered tools
+   * @returns the tool instance
+   */
   private getTool(name: string): Tool {
     const tool = this.tools.get(name);
     if (!tool) {
