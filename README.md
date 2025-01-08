@@ -2,6 +2,8 @@
 
 MCP Server is a simple server that implements the Model Context Protocol (MCP) to provide a **simpler API** to interact with the Model Context Protocol. 
 
+<a href="https://glama.ai/mcp/servers/etvinsef99"><img width="380" height="200" src="https://glama.ai/mcp/servers/etvinsef99/badge" alt="Server MCP server" /></a>
+
 ## Why Use This Server?
 
 In "[La Rebelion](https://rebelion.la)" we are working on a set of tools and services to simplify processes and workflows for a better and more efficient developer experience. This server is part of a set of tools.
