@@ -1,5 +1,8 @@
 # mcp-server
 
+> [!IMPORTANT]
+> We moved the project to [Agentico](https://www.npmjs.com/package/@agentico/mcp-server) to better organize the tools and services for AI developers. We encourage you to use the new package and follow the updates on the [Agentico's GitHub repository](https://github.com/agentico-dev/mcp-server).
+
 MCP Server is a simple server that implements the Model Context Protocol (MCP) to provide a **simpler API** to interact with the Model Context Protocol. 
 
 ## Why Use This Server?
